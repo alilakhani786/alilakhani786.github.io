@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Code Club - Bootstrap 5</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <style>
+        .con-top {
+            padding: 1rem;
+            background-color: rgb(34, 163, 243);
+            border: 2px solid #000;
+            color: #fff;
+            text-align: center;    
+        }
+        .col1 {
+            padding: 1rem;
+            background-color: rgb(248, 192, 70);
+            text-align: center;        
+        }
+        .col2 {
+            padding: 1rem;
+            background-color: rgb(248, 150, 105);
+            text-align: center;        
+        }
+        .col3 {
+            padding: 1rem;
+            background-color: rgb(105, 179, 248);
+            text-align: center;        
+        }
+
+
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+   
+    <!-- Nav bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Ali CodeClub</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">dropdown 1</a></li>
+                  <li><a class="dropdown-item" href="#">dropdown 2</a></li>
+                  <li><a class="dropdown-item" href="#">dropdown 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>    
+      <div style="height: 20px;"> </div>
+      <!-- Search bar -->
+      
+      <!--div class="col-lg-9 mx-auto p-3 py-md-8">
+          <div class="div container d-flex justify-content-center">
+            <div class="div input-group col-sm-7 input-group-lg">
+                <div class="input-group-prepend">
+                    <span class="input-group-text google">
+                        Auto Search
+                    </span>
+                </div>
+                <input type="text" class="form-control" style="height:48px">
+                <div class="div input-group-append">
+                    <span class="input-group-text microphone">
+                        xx
+                    </span>
+                </div>
+            </div>
+        </div>
+       </div-->
+
+       <!-- Hero -->
+       <div class="container-fluid">
+        <div class="col">
+            <div class="row">
+                <div class="bg-image d-flex justify-content-center align-items-center" style="background-image: url('img/gbb.jpg'); height: 40vh;">
+                    <div class="col-lg-9 mx-auto p-3 py-md-8">
+                        <div class="div container d-flex justify-content-center">
+                          <div class="div input-group col-sm-7 input-group-lg">
+                              <div class="input-group-prepend">
+                                  <span class="input-group-text google" style="background: rgba(255, 255, 255, 0.7);">
+                                      Auto Search
+                                  </span>
+                              </div>
+                              <input type="text" class="form-control" style="height:48px">
+                              <div class="div input-group-append">
+                                  <span class="input-group-text" style="background: rgba(255, 255, 255, 0.7);">
+                                      Just Type
+                                  </span>
+                              </div>
+                          </div>
+                      </div>
+                     </div>
+                </div>
+            </div>
+        </div>    
+        <div style="height: 20px;"> </div>
+       <!-- Grid -->
+
+        <div class="container-fluid">
+            <div class="col">
+                <div class="row">
+                    <div class="col-sm-3 col1">.col 1</div>
+                    <div class="col-sm-6 col2">.col 2</div>
+                    <div class="col-sm-3 col3">.col 3</div>
+                </div>
+            </div>
+        </div>
+
+        
+
+</body>
+</html>
