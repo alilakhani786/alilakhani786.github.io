@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ali Code Club - Bootstrap 5</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/loading-attribute-polyfill.umd.js" async></script>
+    <link rel="stylesheet" href="dist/loading-attribute-polyfill.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/mdb.min.css">
     <style>
@@ -12,36 +17,32 @@
             padding: 1rem;
             background-color: rgb(34, 163, 243);
             border: 2px solid #000;
-            color: #fff;
+            color: #fff;   
             text-align: center;    
         }
         .col1 {
             padding: 1rem;
-            background-color: rgb(248, 192, 70);
+            background-color: rgb(248, 228, 186);
             text-align: center;        
         }
         .col2 {
             padding: 1rem;
-            background-color: rgb(248, 150, 105);
-            text-align: center;        
+            background-color: rgb(225, 238, 250);
+            text-align: center;     
         }
         .col3 {
             padding: 1rem;
-            background-color: rgb(105, 179, 248);
+            background-color: rgb(248, 228, 186);
             text-align: center;        
         }
+        
+}
 
 
 
     </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://unpkg.com/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="js/bootstrap.js"></script>
 </head>
 <body>
-   
-    <!-- Nav bar -->
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Ali CodeClub</a>
@@ -54,20 +55,16 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link 2</a>
+                <a class="nav-link" href="#">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link 3</a>
+                <a class="nav-link" href="#">Products</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown link
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">dropdown 1</a></li>
-                  <li><a class="dropdown-item" href="#">dropdown 2</a></li>
-                  <li><a class="dropdown-item" href="#">dropdown 3</a></li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -125,12 +122,105 @@
         <div class="container-fluid">
             <div class="col">
                 <div class="row">
-                    <div class="col-sm-3 col1">.col 1</div>
-                    <div class="col-sm-6 col2">.col 2</div>
-                    <div class="col-sm-3 col3">.col 3</div>
+                    <div class="col-sm-3 col1 text-start fs-6 lh-md fw-light">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at leo nec mauris venenatis venenatis non vitae diam. Ut vitae ex non velit dictum mollis. Donec porttitor a nunc sed ullamcorper. Vestibulum sit amet efficitur est. Duis eget est ac quam elementum luctus. Donec gravida eget massa eget lobortis. Nam id nisi ante. Nullam ipsum lacus, congue ac ullamcorper suscipit, consectetur consequat mauris. Sed viverra mollis condimentum. Donec dictum felis nec ligula rhoncus, quis euismod ligula imperdiet. Quisque viverra, lectus ut iaculis maximus, velit justo ullamcorper velit, sit amet suscipit dui risus consectetur risus.
+                    </div>
+                    <div class="col-sm-6 col2 text-start">
+                        <h3>Login</h3>
+                        <form class="needs-validation" novalidate">
+                                <label for="validationCustomUsername" class="form-label">Username</label>
+                                <div class="input-group has-validation">
+                                  <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                  <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                  <div class="invalid-feedback">
+                                    Please enter registered email address.
+                                  </div>
+                                </div>
+
+                            <div class="mb-3">
+                              <label for="exampleInputPassword1" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </form>
+                    </div>
+                    <div class="col-sm-3 col3 text-start fs-6 lh-md fw-light">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce at leo nec mauris venenatis venenatis non vitae diam. Ut vitae ex non velit dictum mollis. Donec porttitor a nunc sed ullamcorper. Vestibulum sit amet efficitur est. Duis eget est ac quam elementum luctus. Donec gravida eget massa eget lobortis. Nam id nisi ante. Nullam ipsum lacus, congue ac ullamcorper suscipit, consectetur consequat mauris. Sed viverra mollis condimentum. Donec dictum felis nec ligula rhoncus, quis euismod ligula imperdiet. Quisque viverra, lectus ut iaculis maximus, velit justo ullamcorper velit, sit amet suscipit dui risus consectetur risus.
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="container-fluid" style="margin-bottom: 50px;">
+            <div class="row" style="margin-top: 25px">
+              <div class="col-sm-3">
+                ​<picture>
+                    <source srcset="img/singapore.jpeg" type="image/svg+xml">
+                    <img src="img/singapore.jpeg" class="img-fluid img-thumbnail" width = "100%" alt="..." loading="lazy" />
+                </picture>
+              </div>
+           
+              <div class="col-sm-3 w-25">
+                ​<picture>
+                    <source srcset="img/jakarta-8.jpeg" type="image/svg+xml">
+                    <img src="img/jakarta-8.jpeg" class="img-fluid img-thumbnail " alt="..." loading="lazy" />
+                </picture>
+              </div>
+           
+              <div class="col-sm-3 w-25">
+                ​<picture>
+                    <source srcset="img/malaysia.jpeg" type="image/svg+xml">
+                    <img src="img/malaysia.jpeg" class="img-fluid img-thumbnail " alt="..." loading="lazy" />
+                </picture>
+              </div>
+
+              <div class="col-sm-3">
+                ​<picture>
+                    <source srcset="img/india-5.jpeg" type="image/svg+xml">
+                    <img src="img/india-5.jpeg" class="img-fluid img-thumbnail " alt="..." loading="lazy" />
+                </picture>
+              </div>
+          </div>
+          <div class="row" style="margin-top: 25px">
+            <div class="col-sm-3">
+              ​<picture>
+                  <source srcset="img/australia.jpeg" type="image/svg+xml">
+                  <img src="img/australia.jpeg" class="img-fluid img-thumbnail" alt="..." loading="lazy" />
+              </picture>
+            </div>
+         
+            <div class="col-sm-3">
+              ​<picture>
+                  <source srcset="img/thailand.jpeg" type="image/svg+xml">
+                  <img src="img/thailand.jpeg" class="img-fluid img-thumbnail" alt="..." loading="lazy" />
+              </picture>
+            </div>
+         
+            <div class="col-sm-3">
+              ​<picture>
+                  <source srcset="img/india.jpeg" type="image/svg+xml">
+                  <img src="img/india.jpeg" class="img-fluid img-thumbnail" alt="..." loading="lazy" />
+              </picture>
+            </div>
+
+            <div class="col-sm-3">
+              ​<picture>
+                  <source srcset="img/gbb2.jpg" type="image/svg+xml">
+                  <img src="img/gbb2.jpg" class="img-fluid img-thumbnail" alt="..." loading="lazy" />
+              </picture>
+            </div>
+        </div>
+          
+        </div>
+        <footer class="footer mt-auto py-3 bg-dark">
+            <div class="container">
+              <span class="text-muted">Place sticky footer content here.</span>
+            </div>
+          </footer>
+          
 
         
 
